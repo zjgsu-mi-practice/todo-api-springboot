@@ -115,3 +115,22 @@ PUT /api/todos/{id}
 ## Development
 
 The application runs with an in-memory H2 database and is pre-loaded with sample data when running with the `dev` profile. 
+
+## Testing
+
+[![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen.svg)](https://github.com/zjgsu-mi-practice/todo-api-springboot)
+
+This project includes comprehensive test coverage with:
+
+- Unit tests for controllers and services
+- Integration tests for API endpoints
+
+See [TESTING.md](TESTING.md) for complete testing documentation.
+
+### Run Tests
+
+To run the tests:
+
+```bash
+./gradlew test
+```

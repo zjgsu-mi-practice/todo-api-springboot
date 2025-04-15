@@ -54,6 +54,12 @@ kotlin {
 	}
 }
 
-// tasks.withType<Test> {
-// 	useJUnitPlatform()
-// }
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+
+    maxHeapSize = "1G"
+
+    testLogging {
+        events("passed")
+    }
+}
